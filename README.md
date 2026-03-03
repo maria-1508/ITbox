@@ -16,6 +16,7 @@ ORM：SQLAlchemy
 データベース：SQLite（開発環境）
 ※SQLAlchemy を使用しているため、MySQL・PostgreSQL など他DBへの移行も容易です。
 3.ディレクトリ構成
+
 ITbox/
 │── app.py          # Flaskアプリケーション本体
 │── models.py       # Vocabularyモデル定義
