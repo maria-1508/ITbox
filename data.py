@@ -15,8 +15,6 @@ data =[
 ]
 
 with app.app_context():
-    db.drop_all()
-    db.create_all() 
     for item in data:
         vocabulary = Vocabulary(word_jp=item["word_jp"], word=item["word"], meaning=item["meaning"])
         db.session.add(vocabulary)

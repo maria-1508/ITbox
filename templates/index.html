@@ -1,0 +1,62 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 1</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='main.css') }}"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- form đăng nhập -->
+
+      <div class="form-box active" id="login-form">
+        <form method="POST">
+        <form action="">
+          <h2>Login</h2>
+          <input type="email" name="email" placeholder="Email" required />
+          <input
+            type="password"
+            name="password"
+            placeholder="Password"
+            required
+          />
+          <button type="submit" name="login">Login</button>
+          <p>
+            Don't have an account
+            <a href="#" onclick="showForm('register-form')">Register</a>
+          </p>
+        </form>
+      </div>
+      <!-- form Đăng Ký - Register -->
+
+      <div class="form-box" id="register-form">
+        <form method="POST">
+        <form action="">
+          <h2>Register</h2>
+          <input type="text" name="name" placeholder="Name" required />
+          <input type="email" name="email" placeholder="Email" required />
+          <input
+            type="password"
+            name="password"
+            placeholder="Password"
+            required
+          />
+          <select name="role" id="" required>
+            <option value="">--Select Role</option>
+            <option value="User">User</option>
+            <option value="Admin">Admin</option>
+          </select>
+          <button type="submit" name="register">Register</button>
+          <p>
+            Already have an account ?
+            <a href="#" onclick="showForm('login-form')">Login</a>
+          </p>
+        </form>
+      </div>
+    </div>
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+  </body>
+</html>

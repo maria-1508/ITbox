@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Bpmf+Zihi+Kai+Std&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+NZ+Basic:wght@100..400&family=Story+Script&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Story Script", sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to right, #6f827f96, #9de3f3);
+  color: #333;
+}
+
+.container {
+  margin: 0 15px;
+}
+
+/* khung dang nhap */
+.form-box {
+  width: 100%;
+  max-width: 450px;
+  padding: 30px;
+  background: #ffff;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+}
+.form-box.active {
+  display: block;
+}
+
+h2 {
+  font-size: 34px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 12px;
+  background: #eee;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: #7494ec;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 20px;
+  transition: 0.5s;
+}
+
+button:hover {
+  background: rgb(100, 182, 114);
+}
+
+p {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+p a {
+  color: red;
+  text-decoration: none;
+}
+
+p a:hover {
+  text-decoration: underline;
+}

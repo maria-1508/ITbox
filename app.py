@@ -1,13 +1,20 @@
-from flask import Flask
+from flask import Flask, render_template, request
 from config import Config
-from models import db, Vocabulary
+from models import db, Vocabulary, Users
 
 app = Flask(__name__)
 app.config.from_object(Config)
 db.init_app(app)
+with app.app_context():
+    db.create_all()
+
 
 @app.route('/')
 def home():
-    return "app run" 
+    return render_template('index.html')
+
+
+
 if __name__ == '__main__':
     app.run(debug=True)
+
